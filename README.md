@@ -76,28 +76,28 @@ A test S3 bucket was created to simulate a standard cloud storage resource.
 ## Step 2 – Sensitive Object Uploaded
 A sample file (`customer_data.txt`) was uploaded to represent stored business data.
 
-![File Uploaded](screenshots/02-file-uploaded.png)
+![File Uploaded](02-file-uploaded.png)
 
 ---
 
 ## Step 3 – Public Access Controls Disabled
 Block Public Access was intentionally disabled to simulate a common cloud misconfiguration.
 
-![Block Public Access Off](screenshots/03-block-public-access-off.png)
+![Block Public Access Off](03-block-public-access-off.png)
 
 ---
 
 ## Step 4 – Public Bucket Policy Applied
 A permissive bucket policy was added allowing anonymous read access (`Principal: "*"`) to all objects.
 
-![Public Bucket Policy](screenshots/04-bucket-policy-public.png)
+![Public Bucket Policy](04-bucket-policy-public.png)
 
 ---
 
 ## Step 5 – Exposure Confirmation
 The object URL was accessed from an unauthenticated browser session, confirming public exposure.
 
-![Public URL Works](screenshots/05-public-url-works.png)
+![Public URL Works](05-public-url-works.png)
 
 ---
 
@@ -108,28 +108,28 @@ The object URL was accessed from an unauthenticated browser session, confirming 
 ## Step 6 – CloudTrail Audit Logging Enabled
 CloudTrail was configured to record S3 management and data events, encrypted using KMS.
 
-![CloudTrail Logging](screenshots/06-cloudtrail-trail-created.png)
+![CloudTrail Logging](06-cloudtrail-trail-created.png)
 
 ---
 
 ## Step 7 – AWS Config Compliance Rules Enabled
 AWS Config rules were deployed to monitor for public S3 access violations.
 
-![Config Rules Enabled](screenshots/07-config-rules-enabled.png)
+![Config Rules Enabled](07-config-rules-enabled.png)
 
 ---
 
 ## Step 8 – Compliance Violation Detected
 AWS Config evaluated the resource and flagged the bucket as **NON-COMPLIANT**.
 
-![Noncompliant](screenshots/08-config-noncompliant.png)
+![Noncompliant](08-config-noncompliant.png)
 
 ---
 
 ## Step 9 – GuardDuty Monitoring Enabled
 GuardDuty was enabled to provide continuous threat detection using CloudTrail and DNS telemetry.
 
-![GuardDuty Enabled](screenshots/09-guardduty-enabled.png)
+![GuardDuty Enabled](09-guardduty-enabled.png)
 
 ---
 
@@ -140,28 +140,28 @@ GuardDuty was enabled to provide continuous threat detection using CloudTrail an
 ## Step 10 – Public Bucket Policy Removed
 The permissive bucket policy was deleted to eliminate anonymous access.
 
-![Policy Removed](screenshots/10-policy-removed.png)
+![Policy Removed](10-policy-removed.png)
 
 ---
 
 ## Step 11 – Block Public Access Restored
 Block Public Access was re-enabled to prevent future exposure.
 
-![Block Public Access On](screenshots/11-block-public-access-on.png)
+![Block Public Access On](11-block-public-access-on.png)
 
 ---
 
 ## Step 12 – Access Verification
 Public access attempts now return an AccessDenied error, confirming remediation.
 
-![Access Denied](screenshots/12-public-url-accessdenied.png)
+![Access Denied](12-public-url-accessdenied.png)
 
 ---
 
 ## Step 13 – Compliance Restored
 AWS Config re-evaluated the resource and confirmed **COMPLIANT** status.
 
-![Compliant](screenshots/13-config-compliant.png)
+![Compliant](13-config-compliant.png.png)
 
 ---
 
