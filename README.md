@@ -71,7 +71,13 @@ A test S3 bucket was created to simulate a standard cloud storage resource.
 
 ![Bucket Created](01-bucket-created.png)
 
+
+
 ---
+
+
+
+
 
 ## Step 2 – Sensitive Object Uploaded
 A sample file (`customer_data.txt`) was uploaded to represent stored business data.
