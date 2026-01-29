@@ -69,7 +69,7 @@ SOC Investigation & Remediation
 ## Step 1 – S3 Bucket Creation
 A test S3 bucket was created to simulate a standard cloud storage resource.
 
-![Bucket Created](screenshots/01-bucket-created.png)
+![Bucket Created](01-bucket-created.png)
 
 ---
 
